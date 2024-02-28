@@ -1,0 +1,143 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 3px;
+  text-align: center;
+}header h1{
+  text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5); 
+
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #999292;
+  padding: 10px;
+}
+
+nav ul li {
+  margin: 0 15px;
+  text-shadow: 2px 2px 4px rgba(233, 53, 21, 0.507); 
+  
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #ffcc00;
+  text-shadow: 2px 2px 4px rgba(41, 40, 0, 0.87); 
+  box-shadow:4px 4px 6px #ffcc00;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 3px;
+  width: 100%;
+  text-decoration: underline;
+  text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5); 
+
+}img{
+  display:inline-block;
+  position:absolute;
+  top:200px;
+  padding:0px;
+  right:150px;
+  box-shadow: 0 0 50px rgb(0, 0, 0);
+}
+
+.computer-container {
+    position: relative;
+  }
+
+  .opening-computer {
+    position: relative;
+    width: 600px; 
+    height: 400px; 
+    background-color: silver; 
+    border-radius: 10px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    animation: openComputer 4s ease-in-out 1; 
+    z-index: 10;
+  }
+
+  .screen {
+    flex: 1; 
+    background-color: #333; 
+    border-radius: 5px;
+    transform-origin: top;
+    transform: scaleY(1); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff; 
+    font-size: 40px; 
+    text-align: center; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    letter-spacing: 2px;
+    transition: transform 0.3s ease-in-out; 
+  }
+
+  .screen:hover {
+    transform: scale(1.1); 
+  }
+
+  @keyframes openComputer {
+    0%, 100% {
+      transform: scaleY(1);
+    }
+    50% {
+      transform: scaleY(0.5);
+    }
+  }
+
+#toggleMode {
+    background-color: #00796b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+    position: fixed;
+    top: 20px;
+    left:  20px;
+    }
+    
+    #toggleMode:hover {
+        background-color: #005a4f;
+        transform: scale(1.05);
+    }
+    body.dark-mode {
+      background-color: #444141;
+      color: rgb(255, 255, 255);
+      text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    }
