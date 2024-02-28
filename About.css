@@ -1,0 +1,163 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+#toggleMode {
+    background-color: #00796b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+    position: fixed;
+    top: 20px;
+    left:  20px;
+    }
+    
+    #toggleMode:hover {
+        background-color: #005a4f;
+        transform: scale(1.05);
+      }
+header {
+    background-color: #333;
+    color: white;
+    padding: 3px;
+    text-align: center;
+}
+header h1{
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5); 
+  }
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #999292;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+    text-shadow: 2px 2px 4px rgba(233, 53, 21, 0.507);
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  li a:hover {
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px rgba(41, 40, 0, 0.87); 
+    box-shadow:4px 4px 6px #ffcc00;
+  }
+
+section {
+    margin: 20px;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    height: 1000px;
+}
+
+h2 {
+    color: #333;
+    font-size: 40px;
+
+}
+
+.cls1 {
+    font-size: 20px;
+
+}
+
+.cls2 {
+    font-size: 20px;
+}
+
+img {
+    height: 50px;
+    padding: 10px;
+    margin: 0px;
+  object-fit:contain ;
+  mix-blend-mode:hard-light;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h3+p {
+    font-size: 20px;
+}
+
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: aqua;
+}
+
+.site-description {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.site-description h3 {
+    color: #8b3e3e;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+.site-description p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.cls5 {
+    text-align: center;
+    font-size: 15px;
+    color: #8b3e3e;
+}
+.cls a{
+    display: inline-block;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 3px;
+    width: 100%;
+    text-decoration: underline;
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5); 
+}
+body.dark-mode {
+    background-color: #080808bb;
+  }
